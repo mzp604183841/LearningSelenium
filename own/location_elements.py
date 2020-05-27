@@ -6,4 +6,5 @@ myDriver = webdriver.Chrome('/Users/MZP/Desktop/chromedriver')
 myDriver.get_window_size()
 myDriver.get("http://www.baidu.com")
 
-
+time.sleep(5)
+myDriver.quit()
