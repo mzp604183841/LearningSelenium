@@ -8,5 +8,12 @@ myDriver.get("http://www.baidu.com")
 myDriver.find_element_by_id("kw").send_keys('selenium')
 myDriver.find_element_by_id('su').click()
 
-time.sleep(5)
+pageTitle = myDriver.title
+print('页面标题: ' + pageTitle)
+time.sleep(2)
+myDriver.back()
+time.sleep(2)
+myDriver.forward()
+time.sleep(2)
+
 myDriver.quit()
