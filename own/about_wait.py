@@ -12,6 +12,7 @@ myDriver.get('http://www.baidu.com')
 wait = WebDriverWait(myDriver, 5, 0.5)
 
 searchFiled = wait.until(EC.presence_of_element_located((By.ID, 'kw')))
+searchFiled = wait.until(EC.title_is(())) # 仅用于判断页面的标题是否满足
 searchFiled.send_keys('selenium')
 time.sleep(3)
 myDriver.quit()
