@@ -27,8 +27,6 @@ class Douban(unittest.TestCase):
                 print('现在切回到豆瓣首页')
         time.sleep(3)
 
-        self.driver.switch_to.alert
-
     def tearDown(self) -> None:
         self.driver.quit()
 
